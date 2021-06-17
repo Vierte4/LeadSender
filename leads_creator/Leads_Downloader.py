@@ -24,7 +24,8 @@ def start_webdriver(initial_url):
     options = webdriver.ChromeOptions()
 
     options.add_argument("--disable-blink-features=AutomationControlled")
-    options.add_argument(r'--user-data-dir=C:\Users\asadm\AppData\Local\Google\Chrome\User Data') #путь к данным гугла
+    options.add_argument(r'--user-data-dir=C:\Users\asadm\AppData\Local\Google\Chrome\User Data') # Путь к данным гугла
+    options.add_argument("--no-startup-window") # Активирует безоконный режим
 
     driver = webdriver.Chrome(
         r"C:\Programming\Телеграм бот\lead_sender_bot\leads_creator\chromedriver.exe", options=options)
