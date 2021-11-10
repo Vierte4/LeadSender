@@ -40,4 +40,4 @@ Leads_Sender это программа, которая каждые 25-35 мин
             for sheet in range(0, number_of_download_files):
                 message.answer(user_id = client_id, text = lead_creator
 
-4. Отправление лидов клиентам и чистка
+4. Отправление лидов клиентам
