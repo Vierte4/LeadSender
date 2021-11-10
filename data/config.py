@@ -1,9 +1,9 @@
 import json
 
-BOT_TOKEN = 'bot_token'
-admin_id = 'admin_id'
-browser = 'browser'
-initial_url = 'initial_url'
+BOT_TOKEN = 'bot_token' # Ввести токен бота
+admin_id = 'admin_id' # Ввести айди админа
+browser = 'browser' # Ввести полный путь до используемого браузера
+initial_url = 'initial_url' # Ввести ссылку страницы со списком рекламных аккаунтов
 
 with open('data/users_data.json', 'r', encoding='utf-8') as f:
     users_data = json.load(f)
